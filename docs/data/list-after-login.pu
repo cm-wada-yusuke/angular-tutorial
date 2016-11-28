@@ -30,7 +30,7 @@ api -> redis : AccessToken
 note right : db:9, ttl:60s
 redis --> api : userId
 api -> dynamo : userId
-note right : table:metadata
+note right : table:user_metadata
 '矢印の右側にコメントボックスを表示してそこにコメントを表示する、という意味
 
 dynamo --> api : ユーザープロフィール
